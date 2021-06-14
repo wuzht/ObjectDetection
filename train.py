@@ -1,3 +1,5 @@
+import os
+os.environ['CUDA_VISIBLE_DEVICES'] = '6'
 import time
 import torch.backends.cudnn as cudnn
 import torch.optim
@@ -7,7 +9,7 @@ from datasets import PascalVOCDataset
 from utils import *
 
 # Data parameters
-data_folder = './'  # folder with data files
+data_folder = './data'  # folder with data files
 keep_difficult = True  # use objects considered difficult to detect?
 
 # Model parameters
